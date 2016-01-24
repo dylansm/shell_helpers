@@ -1,7 +1,7 @@
-dkp() {
+function dkp() {
   docker ps | awk -v OFS='\t' '{print $01, $NF}'
 }
 
-dka() {
+function dka() {
   docker ps -a | awk -v OFS='\t' '{print $01, $NF}'
 }
